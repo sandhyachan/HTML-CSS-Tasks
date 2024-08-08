@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Github Profile Page</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #CAD2C5;
+        }
+        header {
+            background-color: #2F3D46;
+            color: white;
+            text-align: center;
+            padding-top: 25px;
+            padding-bottom: 20px;
+            font-size: large;
+        }
+        .sidebar {
+            background-color: #353535;
+            color: white;
+            border-radius: 25px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+            margin: 60px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between; /* Ensures content is evenly spaced */
+        }
+        .search-bar {
+            height: 40px;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: #404040;
+            width: 100%; /* Use 100% for responsiveness */
+            max-width: 400px; /* Optional max-width */
+        }
+        .main-content {
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            height: calc(100vh - 120px); /* Adjust height to fill available space */
+        }
+        /* Content boxes styling */
+        .content-boxes {
+            display: flex;
+            gap: 20px; /* Default gap for smaller screens */
+            margin-bottom: 20px;
+        }
+        .content-box {
+            flex: 1;
+            background-color: #353535;
+            color: white;
+            padding: 20px;
+            height: 140px; /* Increased height for content boxes */
+            text-align: center;
+            border-radius: 15px;
+        }
+        /* Main box styling */
+        .main-box {
+            background-color: #353535;
+            color: white;
+            padding: 40px; /* Reduced padding for main box */
+            text-align: center;
+            border-radius: 15px;
+            flex-grow: 1; /* Make the main box grow to fill available space */
+            height: 150px;
+            overflow: auto;
+        }
+
+        /* Media Queries for responsiveness */
+        @media (max-width: 768px) {
+            .content-boxes {
+                flex-direction: column; /* Stack content boxes on smaller screens */
+                gap: 10px; /* Adjust gap */
+            }
+            .main-box {
+                padding: 40px; /* Adjust padding for smaller screens */
+            }
+        }
+
+        /* Large screen adjustments */
+        @media (min-width: 992px) {
+            .content-boxes {
+                gap: 60px; /* Increased gap for large screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://www.pngfind.com/pngs/b/40-405209_github-logo-png.png" alt="github logo" style="height: 25px; width: 50px; float: left; padding-left: 20px;">
+        G I T H U B
+    </header>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-3 col-md-2 col-lg-3 sidebar d-none d-md-block">
+                <ol>
+                    <li>SIDEBAR LIST 1</li>
+                    <li>SIDEBAR LIST 2</li>
+                    <li>SIDEBAR LIST 3</li>
+                </ol>
+            </div>
+            <div class="col main-content">
+                <div class="container mt-5">
+                    <div class="row mb-3 justify-content-center">
+                        <div class="col-6">
+                            <input type="text" class="form-control search-bar" placeholder="Search">
+                        </div>
+                    </div>
+                    <div class="container mt-3">
+                        <div class="content-boxes mt-5">
+                            <div class="content-box">Content Box 1</div>
+                            <div class="content-box">Content Box 2</div>
+                            <div class="content-box">Content Box 3</div>
+                        </div>
+                        <div class="main-box mt-5">Main Content Area</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
