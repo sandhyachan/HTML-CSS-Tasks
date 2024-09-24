@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5 bg-light">
+        <h1 id="title">FOOD PREFERENCE SURVEY</h1>
+        <p id="description">Please fill the following form with your information. Choose your choice of food for the menu of the upcoming culturals event.</p>
+        <div>
+          <div>
+            <form id="form">
+              <div class="form-row mb-3">
+                <div class="col-lg-6 col-md-6 col-sm-12 mb-2">
+                  <div class="form-group">
+                    <label for="firstName">First Name</label>
+                    <input id="first-name" type="text" class="form-control" placeholder="First name" required>
+                </div>
+                </div>
+                <div class="col-lg-6 col-sm-12 col-md-6">
+                  <div class="form-group">
+                    <label for="lastName">Last Name</label>
+                  <input id="last-name" type="text" class="form-control" placeholder="Last name" required>
+                  </div>
+                </div>
+              </div>
+              
+              <fieldset class="form-group mb-3">
+                <div class="row">
+                  <legend class="col-form-label col-sm-2 pt-0">Gender</legend>
+                  <div class="col-sm-10">
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="Female" checked>
+                      <label class="form-check-label" for="gridRadios1">
+                        Female
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="Male">
+                      <label class="form-check-label" for="gridRadios2">
+                        Male
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="Other">
+                      <label class="form-check-label" for="gridRadios2">
+                        Other
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </fieldset>
+              <div class="form-group row mb-3">
+                <label for="inputEmail" class="col-sm-2 col-form-label">Email Address</label>
+                <div class="col-sm-10">
+                  <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="exampleFormControlTextarea1">Address</label>
+                <textarea class="form-control" id="address" rows="3" placeholder="# Building Name, Street Name, Suburb, City  "></textarea>
+              </div>
+              <div class="form-row mb-3">
+                <div class="col-lg-4 col-sm-12 col-md-6 pb-2 mb-1">
+                  <label for="firstName">State</label>
+                  <input id="state" type="text" class="form-control" placeholder="State">
+                </div>
+                <div class="col-lg-5 col-sm-12 col-md-6 pb-2 mb-1">
+                  <label for="lastName">Country</label>
+                  <input id="country" type="text" class="form-control" placeholder="Country">
+                </div>
+                <div class="col-lg-3 col-sm-12 col-md-6 pb-2">
+                  <div class="form-group">
+                    <label for="lastName">Pincode</label>
+                  <input type="text" 
+                  id="pincode" class="form-control" placeholder="Pincode" required>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group overflow-auto">
+                <label for="exampleFormControlSelect2">Choice of Food</label>
+                <select multiple class="form-control" id="food-choice">
+                  <option>Pizza Neopolitan with Sparkling Mint</option>
+                  <option>Mushroom Julliene with Croissant</option>
+                  <option>Seafood Temaki Sushi with Miso Soup</option>
+                  <option>Beef Wellington with Yorkshire Pudding</option>
+                  <option>Fettuccine Alfredo with Layered Tiramisu</option>
+                </select>
+                <small id="emailHelp" class="form-text text-muted">Please choose atleast 2 options. You can select multiple options by holding down the Ctrl key (Windows) or Command key (Mac) while clicking on the options.</small>
+              </div>
+              <div class="d-md-flex justify-content-md-end mb-4">
+                <button id="submit" class="btn btn-primary" type="button">Submit</button>
+              </div>
+            </form>
+          </div>
+          <div class="container overflow-auto ">
+            <table id="dataTable" class="table table-striped">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">First Name</th>
+                  <th scope="col">Last Name</th>
+                  <th scope="col">Gender</th>
+                  <th scope="col">Email</th>
+                  <th scope="col">Address</th>
+                  <th scope="col">State</th>
+                  <th scope="col">Country</th>
+                  <th scope="col">Pincode</th>
+                  <th scope="col">Choice of Food</th>
+                </tr>
+              </thead>
+              <tbody id="tableBody">
+                 
+
+              </tbody>
+            </table>      
+          </div>
+        </div>
+
+        <script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>
+        <script src="./script.js"></script>
+</body>
+</html>
+
