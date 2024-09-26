@@ -24,12 +24,13 @@ button {
     #0099ff;
 }
 .customButton{
-height: 60px;
-width: 60px;
+height: 65px;
+width: 65px;
 background-color: #303136;
 border-radius: 15px;
 margin: 5px;
 border: none;
+font-size: large;
 }
 .customButton:active{
     background-color: rgb(70, 70, 70);
@@ -50,7 +51,7 @@ border: none;
     background-color: #0072dc;
 }
 #equal{
-    background-color: #1991fe;
+    background-color: #1989f1;
     color: #c3e0fa;
 }
 #equal:active{

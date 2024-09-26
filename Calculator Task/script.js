@@ -107,8 +107,8 @@ document.addEventListener('keydown', (event) => {
 })  
 
 document.addEventListener("keydown", (e)=> {
-    if(e.key.match("Enter")){
-        
+    if(e.key === "Enter"){
+        buttons.equal.click()
     }
 })
   
