@@ -1,0 +1,33 @@
+.clickbutton{
+display: inline-block;
+outline: 0;
+border:0;
+cursor: pointer;
+text-decoration: none;
+position: relative;
+color: #000;
+background: #fff;
+line-height: 30px;
+border-radius: 40px;
+padding: 20px;
+font-size: 30px;
+font-weight: 600;
+box-shadow: rgb(255, 198, 0) -2px -2px 0px 2px, rgb(246, 84, 174) 0px 0px 0px 4px, rgba(0, 0, 0, 0.05) 0px 0px 2px 7px;
+transition: all 0.2s;
+}
+.clickbutton:hover{
+    box-shadow: rgb(246, 84, 174) -2px -2px 0px 2px, rgb(255, 198, 0) 0px 0px 0px 4px, rgba(0, 0, 0, 0.05) 0px 0px 2px 7px;
+    transform: scale(1.01);
+    background-color: rgb(220, 195, 198);
+}
+#inputbox{
+    height: 100px;
+    word-wrap: break-word;
+    background: linear-gradient(to bottom left, rgb(255, 166, 215), rgb(255, 242, 176));
+    text-align: center;
+    overflow-y: scroll;
+}
+.qwitcher-grypen-bold {
+    font-family: "Qwitcher Grypen", cursive;
+    font-size: 4rem;
+    font-weight: 800;}
