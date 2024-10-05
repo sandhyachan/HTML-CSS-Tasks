@@ -21,7 +21,7 @@ function fetchDogApi(URL){
             throw new Error(`"HTTP Error" ${response.status}`)
         } return response.json()
     })
-    //get data from object and append to ikmagecontainer
+    //get data from object and append to imagecontainer
     .then(datas => {
         imgContainer.innerHTML = ""
         const image = document.createElement("img")
