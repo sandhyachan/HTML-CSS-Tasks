@@ -1,0 +1,7 @@
+body{
+    background:linear-gradient(to left, rgb(11, 116, 11), rgb(100, 176, 100));
+    
+}
+.container{
+    border-radius: 20px;
+}
